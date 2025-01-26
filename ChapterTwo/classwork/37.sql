@@ -1,8 +1,8 @@
-USE cape_codd;
+use cape_codd;
 
-SELECT WareHouseID, 
-       sum(QuantityOnHand) AS TotalItemsOnHandLT3
-FROM INVENTORY
-WHERE QuantityOnHand < 3
-GROUP BY WareHouseID
-ORDER BY TotalItemsOnHandLT3 DESC;
+select WareHouseID, 
+       sum(QuantityOnHand) as TotalItemsOnHandLT3
+from INVENTORY
+where QuantityOnHand < 3
+group by WareHouseID
+order by TotalItemsOnHandLT3 Desc;
